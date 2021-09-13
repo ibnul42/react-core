@@ -1,6 +1,7 @@
 // import ClockList from './components/ClockList';
 // import Clock from './components/Clock';
-import Form from './components/Form';
+// import Form from './components/Form';
+import Calculator from "./components/Calculator";
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
         //     <ClockList quantities={quantities} />
         // </div>
         // <Clock />
-        <Form />
+        // <Form />
+        <Calculator />
     );
 }
 
