@@ -6,8 +6,10 @@
 // import Emoji from "./components/composition/Emoji";
 // import Text from "./components/composition/Text";
 // import Bracket from "./components/composition/Bracket";
-import ClickCounter from "./ClickCounter";
-import HoverCounter from "./HoverCounter";
+import ClickCounter from "./HOC/ClickCounter";
+import HoverCounter from "./HOC/HoverCounter";
+import User from "./HOC/User";
+import Counter from "./HOC/Counter";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -27,8 +29,14 @@ function App() {
         //     )}
         // </Emoji>
         <div className="App">
-            <ClickCounter />
             <HoverCounter />
+            <Counter
+             render={(counter, incrementCount) => (
+                 <ClickCounter counter={counter} incrementCount={incrementCount} />                
+             )}
+             />
+            <User render={(isLoggedIn) => (isLoggedIn ? "Ibnul" : "Guest")} />
+             
         </div>
     );
 }
