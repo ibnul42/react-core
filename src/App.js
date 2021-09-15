@@ -6,10 +6,11 @@
 // import Emoji from "./components/composition/Emoji";
 // import Text from "./components/composition/Text";
 // import Bracket from "./components/composition/Bracket";
-import ClickCounter from "./HOC/ClickCounter";
-import HoverCounter from "./HOC/HoverCounter";
-import User from "./HOC/User";
-import Counter from "./HOC/Counter";
+// import ClickCounter from "./HOC/ClickCounter";
+// import HoverCounter from "./HOC/HoverCounter";
+// import User from "./HOC/User";
+// import Counter from "./HOC/Counter";
+import MouseTracker from "./components/MouseTracker";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -28,16 +29,17 @@ function App() {
         //         </Bracket>
         //     )}
         // </Emoji>
-        <div className="App">
-            <HoverCounter />
-            <Counter
-             render={(counter, incrementCount) => (
-                 <ClickCounter counter={counter} incrementCount={incrementCount} />                
-             )}
-             />
-            <User render={(isLoggedIn) => (isLoggedIn ? "Ibnul" : "Guest")} />
-             
-        </div>
+        // <div className="App">
+        //     <HoverCounter />
+        //     <Counter
+        //      render={(counter, incrementCount) => (
+        //          <ClickCounter counter={counter} incrementCount={incrementCount} />                
+        //      )}
+        //      />
+        //     <User render={(isLoggedIn) => (isLoggedIn ? "Ibnul" : "Guest")} />             
+        // </div>
+
+        <MouseTracker />
     );
 }
 
