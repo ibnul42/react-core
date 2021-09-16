@@ -11,6 +11,7 @@
 // import User from "./HOC/User";
 // import Counter from "./HOC/Counter";
 import MouseTracker from "./components/MouseTracker";
+// import themeContext from "./lib/themeContext";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -37,9 +38,9 @@ function App() {
         //      )}
         //      />
         //     <User render={(isLoggedIn) => (isLoggedIn ? "Ibnul" : "Guest")} />             
-        // </div>
-
+        // </div>   
         <MouseTracker />
+        // <Text />
     );
 }
 
