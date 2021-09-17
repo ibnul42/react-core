@@ -10,8 +10,10 @@
 // import HoverCounter from "./HOC/HoverCounter";
 // import User from "./HOC/User";
 // import Counter from "./HOC/Counter";
-import MouseTracker from "./components/MouseTracker";
+// import MouseTracker from "./components/MouseTracker";
 // import themeContext from "./lib/themeContext";
+import MyEffectComp from "./components/MyEffectComp";
+// import Todo from "./components/Todo";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -39,8 +41,12 @@ function App() {
         //      />
         //     <User render={(isLoggedIn) => (isLoggedIn ? "Ibnul" : "Guest")} />             
         // </div>   
-        <MouseTracker />
+        // <MouseTracker />
         // <Text />
+        <div className="app">
+            {/* <Todo /> */}
+            <MyEffectComp />
+        </div>
     );
 }
 
