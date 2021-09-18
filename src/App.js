@@ -12,8 +12,10 @@
 // import Counter from "./HOC/Counter";
 // import MouseTracker from "./components/MouseTracker";
 // import themeContext from "./lib/themeContext";
-import MyEffectComp from "./components/MyEffectComp";
+// import MyEffectComp from "./components/MyEffectComp";
 // import Todo from "./components/Todo";
+
+import UseRefComp from "./components/UseRefComp";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -45,7 +47,8 @@ function App() {
         // <Text />
         <div className="app">
             {/* <Todo /> */}
-            <MyEffectComp />
+            {/* <MyEffectComp /> */}
+            <UseRefComp />
         </div>
     );
 }
