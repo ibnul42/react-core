@@ -15,7 +15,13 @@
 // import MyEffectComp from "./components/MyEffectComp";
 // import Todo from "./components/Todo";
 
-import UseRefComp from "./components/UseRefComp";
+import LayoutComponentOne from "./components/LayoutComponent";
+import LayoutComponentTwo from "./components/LayoutComponentTwo";
+
+// import UseReducerCount from "./components/UseReducerCount";
+// import GetPost from "./components/GetPost";
+
+// import UseRefComp from "./components/UseRefComp";
 
 function App() {
     // const quantities = [1, 2, 3];
@@ -48,7 +54,11 @@ function App() {
         <div className="app">
             {/* <Todo /> */}
             {/* <MyEffectComp /> */}
-            <UseRefComp />
+            {/* <UseRefComp /> */}
+            {/* <UseReducerCount /> */}
+            {/* <GetPost /> */}
+            <LayoutComponentOne />
+            <LayoutComponentTwo />
         </div>
     );
 }
